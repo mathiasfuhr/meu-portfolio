@@ -45,6 +45,7 @@ h2 {
     background-image: url(./images/rm378-05.jpg);
     background-position: center;
     background-size: cover;
+    height: 100vh;
 }
 
 .container {
