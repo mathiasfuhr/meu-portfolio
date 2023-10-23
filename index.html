@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <div class="bg">
+    <div class="bg hidden">
         <header>
             <div class="container header">
                 <div class="logo">
@@ -24,10 +24,10 @@
                 <div class="menu">
                     <nav>
                         <ul>
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#about-me">Sobre mim</a></li>
-                            <li><a href="#projetos">Projetos</a></li>
-                            <li><a href="./certificados.html" target="_blank">Certificados</a></li>
+                            <li class="hidden"><a href="#home">Home</a></li>
+                            <li class="hidden"><a href="#about-me">Sobre mim</a></li>
+                            <li class="hidden"><a href="#projetos">Projetos</a></li>
+                            <li class="hidden"><a href="./certificados.html" target="_blank">Certificados</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -36,9 +36,9 @@
         <main>
             <div class="container main">
                 <div class="main-text">
-                    <h2>Olá, eu sou </h2>
-                    <h1>Mathias Fuhr</h1>
-                    <p>Desenvolvedor Front-end & UI Designer.</p>
+                    <h2 class="hidden">Olá, eu sou </h2>
+                    <h1 class="hidden">Mathias Fuhr</h1>
+                    <p class="hidden">Desenvolvedor Front-end & UI Designer.</p>
                     <div class="buttons">
                         <a class="btn-1" href="">
                             <img src="./images/linkedin.png" alt="">
@@ -57,11 +57,11 @@
         </main>
     </div><!--bg-->
 
-    <section id="about-me" class="about-bg" aria-label="Sobre Mim">
+    <section id="about-me" class="about-bg hidden" aria-label="Sobre Mim">
         <div class="container about-me">
             <div class="card-photo"></div>
             <div class="about-me-text">
-                <h2>Sobre Mim</h2>
+                <h2 class="hidden">Sobre Mim</h2>
                 <span>Alecrim, RS</span>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id egestas dui. Nullam finibus
                     aliquam enim quis faucibus. Aenean ac commodo dolor, nec bibendum velit.</p>
@@ -100,9 +100,9 @@
         </div>
     </section>
 
-    <section id="projetos" class="projects-bg" aria-label="Projetos">
+    <section id="projetos" class="projects-bg hidden" aria-label="Projetos">
         <div class="container projects">
-            <h2>Projetos</h2>
+            <h2 class="hidden">Projetos</h2>
             <div class="projects-grid">
                 <div class="card-projects">
                     <div class="card">
@@ -121,7 +121,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card-projects">
+                <div class="card-projects hidden">
                     <div class="card">
                         <img src="" alt="">
                     </div>
@@ -138,7 +138,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card-projects">
+                <div class="card-projects hidden">
                     <div class="card">
                         <img src="" alt="">
                     </div>
@@ -155,7 +155,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card-projects">
+                <div class="card-projects hidden">
                     <div class="card">
                         <img src="" alt="">
                     </div>
@@ -172,7 +172,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card-projects">
+                <div class="card-projects hidden">
                     <div class="card">
                         <img src="" alt="">
                     </div>
@@ -189,7 +189,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card-projects">
+                <div class="card-projects hidden">
                     <div class="card">
                         <img src="" alt="">
                     </div>
@@ -210,15 +210,16 @@
         </div>
     </section>
 
-    <footer class="footer-bg" >
+    <footer class="footer-bg hidden">
         <div class="container footer">
-                © Mathias Fuhr 2023 - Todos os direitos reservados.
+            © Mathias Fuhr 2023 - Todos os direitos reservados.
         </div>
     </footer>
+
     <button id="scrollToTopButton">
         <i class="fas fa-arrow-up"></i>
     </button>
-    
+    <script src="./script.js"></script>
 </body>
 
 </html>

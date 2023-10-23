@@ -366,6 +366,22 @@ h2 {
     margin-bottom: 32px;
 }
 
+.card-projects:nth-child(2){
+    transition-delay:300ms;
+}
+.card-projects:nth-child(3){
+    transition-delay:500ms;
+}
+.card-projects:nth-child(4){
+    transition-delay:700ms;
+}
+.card-projects:nth-child(5){
+    transition-delay:900ms;
+}
+.card-projects:nth-child(6){
+    transition-delay:1100ms;
+}
+
 @media(max-width:800px) {
     .projects-bg {
         padding: 25px;
@@ -414,4 +430,28 @@ h2 {
 
 #scrollToTopButton:hover {
     background-color: #0056b3;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(-100%);
+    transition: all 2s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0);
+    transition: all 1s;
+}
+
+.menu li:nth-child(2){
+    transition-delay:400ms ;
+}
+.menu li:nth-child(3){
+    transition-delay:700ms ;
+}
+.menu li:nth-child(4){
+    transition-delay:900ms ;
 }
