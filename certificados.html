@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="certificates.css">
+    <title>Mathias Fuhr</title>
+</head>
+
+<body>
+    <div class="bg">
+        <header>
+            <div class="container header">
+                <div class="logo">
+                    <a href="./index.html">
+                        <h2>Mathias Fuhr</h2>
+                    </a>
+                </div>
+                <div class="menu">
+                    <nav>
+                        <ul>
+                            <li class="hidden"><a href="./index.html#home">Home</a></li>
+                            <li class="hidden"><a href="./index.html#about-me">Sobre mim</a></li>
+                            <li class="hidden"><a href="./index.html#projetos">Projetos</a></li>
+                            <li class="hidden"><a href="./certificados.html" >Certificados</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <section class="certificates-bg">
+            <div class="certificates container">
+                <div class="certificates-cards">
+                    <div class="certificate-card" onclick="showImage(this)">
+                        <div class="certificate-image">
+                            <img src="./images/html&Css.jpg" alt="">
+                        </div>
+                        <div class="certificates-text">
+                            <h3>Html e Css</h3>
+                            <span>89h</span>
+                        </div>
+                    </div>
+                    <div class="certificate-card" onclick="showImage(this)">
+                        <div class="certificate-image">
+                            <img src="./images/git&github.jpg" alt="">
+                        </div>
+                        <div class="certificates-text">
+                            <h3>Git/GitHub</h3>
+                            <span>20h</span>
+                        </div>
+                    </div>
+                    <div class="certificate-card" onclick="showImage(this)">
+                        <div class="certificate-image">
+                            <img src="./images/javascript.jpg" alt="">
+                        </div>
+                        <div class="certificates-text">
+                            <h3>Javascript</h3>
+                            <span>77h</span>
+                        </div>
+                    </div>
+                    <div class="certificate-card" onclick="showImage(this)">
+                        <div class="certificate-image">
+                            <img src="./images/typescript.jpg" alt="">
+                        </div>
+                        <div class="certificates-text">
+                            <h3>Typescript</h3>
+                            <span>20h</span>
+                        </div>
+                    </div>
+                    <div class="certificate-card" onclick="showImage(this)">
+                        <div class="certificate-image">
+                            <img src="./images/certificado_tai.jpg" alt="">
+                        </div>
+                        <div class="certificates-text">
+                            <h3>Tailwind</h3>
+                            <span>20h</span>
+                        </div>
+                    </div>
+                    <div class="certificate-card" onclick="showImage(this)">
+                        <div class="certificate-image">
+                            <img src="./images/boostrap.jpg" alt="">
+                        </div>
+                        <div class="certificates-text">
+                            <h3>Bootstrap 4</h3>
+                            <span>20h</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <footer class="footer-bg hidden">
+            <div class="container footer">
+                © Mathias Fuhr 2023 - Todos os direitos reservados.
+            </div>
+        </footer>
+    </div>
+    <button id="scrollToTopButton">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <div id="image-modal" class="modal">
+        <span class="close" onclick="closeImageModal()">&times;</span>
+        <img class="modal-content" id="modal-image">
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

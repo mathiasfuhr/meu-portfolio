@@ -44,8 +44,6 @@ h2 {
     background-image: url(./images/rm378-05.jpg);
     background-position: center;
     background-size: cover;
-    height: 100vh;
-    overflow-y: hidden;
 }
 
 .container {
@@ -433,14 +431,14 @@ h2 {
     background-color: #0056b3;
 }
 
-.hidden {
+/* .hidden {
     opacity: 0;
     filter: blur(15px);
     transform: translateX(-100%);
     transition: all 2s;
 }
 
-.show {
+/* .show {
     opacity: 1;
     filter: blur(0px);
     transform: translateX(0);
@@ -457,4 +455,4 @@ h2 {
 
 .menu li:nth-child(4) {
     transition-delay: 900ms;
-}
+} */
