@@ -1,20 +1,18 @@
 const myObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
-            entry.target.classList.add('show')
+            entry.target.classList.add('show');
+            myObserver.unobserve(entry.target); // Desconecta o observador após a interseção
         }
-        else {
-            entry.target.classList.remove('show');
-        }
-    })
-})
-
+    });
+});
 
 const elements = document.querySelectorAll('.hidden');
 
 elements.forEach((element) => {
-    myObserver.observe(element)
-})
+    myObserver.observe(element);
+});
+
 
 
 

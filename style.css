@@ -259,7 +259,6 @@ h2 {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 180px;
-
 }
 
 .card-photo {
@@ -321,7 +320,6 @@ h2 {
     }
 }
 
-
 .projects-bg {
     background: #121212;
     padding: 100px 0px;
@@ -340,10 +338,7 @@ h2 {
     border-left: 4px solid #0063e8;
     margin-top: 60px;
     margin-bottom: 40px;
-}
-
-.card-projects-text {
-    max-width: 440px;
+    overflow: hidden;
 }
 
 .card-projects-text h3 {
@@ -431,14 +426,14 @@ h2 {
     background-color: #0056b3;
 }
 
-/* .hidden {
+.hidden {
     opacity: 0;
     filter: blur(15px);
     transform: translateX(-100%);
     transition: all 2s;
 }
 
-/* .show {
+.show {
     opacity: 1;
     filter: blur(0px);
     transform: translateX(0);
@@ -455,4 +450,4 @@ h2 {
 
 .menu li:nth-child(4) {
     transition-delay: 900ms;
-} */
+}
