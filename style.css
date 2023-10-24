@@ -40,12 +40,12 @@ h2 {
     background-color: #007bff;
 }
 
-
 .bg {
     background-image: url(./images/rm378-05.jpg);
     background-position: center;
     background-size: cover;
     height: 100vh;
+    overflow-y: hidden;
 }
 
 .container {
@@ -242,6 +242,7 @@ h2 {
     }
 }
 
+
 @media(max-width:600px) {
     .main {
         grid-template-columns: 1fr;
@@ -264,7 +265,7 @@ h2 {
 }
 
 .card-photo {
-    width: 367px;
+    width: auto;
     height: 367px;
     border-radius: 4px;
     background: #121212;
@@ -331,10 +332,11 @@ h2 {
 .projects-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 50px;
 }
 
 .card-projects .card {
-    width: 530px;
+    width: auto;
     height: 200px;
     background-color: #151515;
     border-left: 4px solid #0063e8;
@@ -368,20 +370,24 @@ h2 {
     margin-bottom: 32px;
 }
 
-.card-projects:nth-child(2){
-    transition-delay:300ms;
+.card-projects:nth-child(2) {
+    transition-delay: 300ms;
 }
-.card-projects:nth-child(3){
-    transition-delay:500ms;
+
+.card-projects:nth-child(3) {
+    transition-delay: 500ms;
 }
-.card-projects:nth-child(4){
-    transition-delay:700ms;
+
+.card-projects:nth-child(4) {
+    transition-delay: 700ms;
 }
-.card-projects:nth-child(5){
-    transition-delay:900ms;
+
+.card-projects:nth-child(5) {
+    transition-delay: 900ms;
 }
-.card-projects:nth-child(6){
-    transition-delay:1100ms;
+
+.card-projects:nth-child(6) {
+    transition-delay: 1100ms;
 }
 
 @media(max-width:800px) {
@@ -389,13 +395,6 @@ h2 {
         padding: 25px;
     }
 
-    .projects-grid {
-        gap: 50px;
-    }
-
-    .card-projects .card {
-        width: 100%;
-    }
 }
 
 @media(max-width:480px) {
@@ -448,12 +447,14 @@ h2 {
     transition: all 1s;
 }
 
-.menu li:nth-child(2){
-    transition-delay:400ms ;
+.menu li:nth-child(2) {
+    transition-delay: 400ms;
 }
-.menu li:nth-child(3){
-    transition-delay:700ms ;
+
+.menu li:nth-child(3) {
+    transition-delay: 700ms;
 }
-.menu li:nth-child(4){
-    transition-delay:900ms ;
+
+.menu li:nth-child(4) {
+    transition-delay: 900ms;
 }
